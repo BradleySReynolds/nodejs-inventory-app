@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1=title
+
+  form(method='POST' action='')
+    div.form-group
+      label(for='name') Name of Country:
+      input#name.form-control(type='text' placeholder='Name' name='name' required='true')
+      label(for='continent') Continent:
+      select#continent.form-control(type='select', placeholder='Select Continent' name='continent' required='true' )
+        for continent in continent_list
+            option(value=continent._id) #{continent.name}
+    div.form-group
+      label(for='population') Population (in millions):
+      input#population.form-control(type='number' name='population')
+      label(for='gdp') Gross Domestic Product (in billions):
+      input#gdp.form-control(type='number' name='gdp')
+    button.btn.btn-primary(type='submit') Submit
+
+    a(href="/home") Back to Home

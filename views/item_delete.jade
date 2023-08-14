@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    p(class="delete-head")= title
+
+    form(method='POST' action='')
+      div(class="form-con").form-group
+        button.btn.btn-primary(type='submit' class="delete") Yes
+        a(href="/home/items/"+url_id class='yes') No
+
+
+    a(href="/home" class="country-list-back") Back to Home

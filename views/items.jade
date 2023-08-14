@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    div(class="country-list-con")
+        h2(class='country-list-head') All Countries
+        p(class="country-list-para") If you don't see your country please 
+            a(href="/home/items/create") Create it now!
+    ul(class='country-list')
+        for item in items_list
+            a(href=item.url class='country-list-item')= item.name 
+
+    a(href="/home" class='country-list-back') Back to Home

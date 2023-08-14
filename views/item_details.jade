@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    div(class="item-con")
+        h2(class="item-detail-head") #{name}
+        p(class="item-detail-para") Location: 
+            a(href=continent.url)  #{continent.name}
+        p(class="item-detail-para") Population: #{population} Million
+        p(class="item-detail-para") GDP: $#{gdp} Billion
+        a(href=item.url+'/delete' class="country-delete") Delete this Country 
+    div(class="item-details-links")
+        a(href="/home/items" class="item-details-link") Back to All Countries
+        a(href="/home" class="item-details-link") Back to Home

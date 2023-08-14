@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    ul
+        for group in groups_list
+            a(href=group.url)= group.name 
+            br
+
+    a(href="/home") Back to Home

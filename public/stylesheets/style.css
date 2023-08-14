@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px 0 0 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.home-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-head {
+  font-size: 32px;
+  margin-bottom: 3rem;
+}
+
+.main-para {
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.home-links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("../images/background.jpg");
+  height: 75vh;
+  width: 100%;
+  background-size: contain;
+  background-repeat: none;
+  padding: 0;
+}
+
+.home-links-item {
+  font-size: 28px;
+  margin: 5rem 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.home-links-item:hover {
+  color: #00b7ff;
+  background-color: rgb(0, 0, 0);
+  transition: 0.4s all ease-in-out;
+}
+
+.country-list-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.country-list-head {
+  font-size: 32px;
+  margin-bottom: 1rem;
+}
+
+.country-list-para {
+  margin-bottom: 3rem;
+  font-size: 18px;
+}
+
+.country-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px 10px;
+  padding: 0 50px;
+}
+
+.country-list-item {
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+
+.country-list-item:hover {
+  color: #00b7ff;
+  border-left: 5px solid #00b7ff;
+  transition: 0.4s color ease-in-out;
+  padding-left: 5px;
+}
+
+.country-list-back {
+  display: flex;
+  justify-content: center;
+  background-color: #00b7ff;
+  padding: 0.5rem;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  margin: 2rem 0;
+}
+
+.item-detail-head {
+  font-size: 48px;
+  margin: 1rem;
+}
+
+.item-detail-para {
+  font-size: 36px;
+}
+
+.item-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.country-delete {
+  background-color: rgb(207, 16, 16);
+  color: white;
+  padding: 0.5rem;
+  margin: 1rem;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.item-details-links {
+  background-color: #00b7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+  padding: 0.5rem;
+}
+
+.item-details-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 5rem;
+  font-size: 24px;
+}
+
+.delete-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.form-con {
+  display: flex;
+  justify-content: center;
+}
+
+.yes,
+.delete {
+  width: 100px;
+  padding: 0.5rem;
+  background-color: white;
+  margin: 2rem;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.yes:hover,
+.delete:hover {
+  background-color: #00b7ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+}

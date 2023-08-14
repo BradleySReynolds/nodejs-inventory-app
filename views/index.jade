@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  div(class="home-con")
+    h1(class='main-head')= title
+    p(class='main-para') Welcome to #{title}, if you can't find you're country feel free to add it.
+  div(class="home-links")
+    a(href="/home/items" class="home-links-item") See All Countries
+    a(href="/home/groups" class="home-links-item") See All Continents

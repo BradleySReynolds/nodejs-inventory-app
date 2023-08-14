@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    ul
+        for item in group_detail
+            a(href=item.url) #{item.name}
+            br
+
+    a(href="/home") Back to Home

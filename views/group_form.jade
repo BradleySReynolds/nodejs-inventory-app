@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1=title
+
+  form(method='POST' action='')
+    div(class="create-form").form-group
+      label(for='name') Name of Continent:
+        input#name.form-control(type='text' placeholder='Name' name='name' required='true')
+      
+      button.btn.btn-primary(type='submit' class="create-btn") Submit
+
+  div(class="item-details-links")
+    a(href="/home/groups" class="item-details-link") Back to Continents
+    a(href="/home" class="item-details-link") Back to Home

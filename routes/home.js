@@ -28,7 +28,19 @@ router.get("/items/:id", itemsController.item_details);
 // Groups Page
 router.get("/groups", groupController.groups_list);
 
-// Specific Item Page
+// get Group form page
+router.get("/groups/create", groupController.group_create_get);
+
+// POST created Group
+router.post("/groups/create", groupController.group_create_post);
+
+// Delete Group Page
+router.get("/groups/:id/delete", groupController.group_delete_get);
+
+// Delete Group Page
+router.post("/groups/:id/delete", groupController.group_delete_post);
+
+// Specific Group Page
 router.get("/groups/:id", groupController.groups_details);
 
 module.exports = router;

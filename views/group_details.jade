@@ -1,9 +1,16 @@
 extends layout
 
 block content
-    ul
-        for item in group_detail
-            a(href=item.url) #{item.name}
-            br
+    if (group_detail.length > 0)
+        ul(class='country-list')
+            for item in group_detail
+                a(href=item.url class='country-list-item') #{item.name}
+                
+    else 
+        p(class="no-countries") No Countries on this continent yet.
 
-    a(href="/home") Back to Home
+    a(href=group.url+'/delete' class="continent-delete") Delete this Continent
+
+    div(class="item-details-links")
+        a(href="/home/groups" class="item-details-link") Back to Continents
+        a(href="/home" class="item-details-link") Back to Home

@@ -1,9 +1,12 @@
 extends layout
 
 block content
-    ul
+    div(class="country-list-con")
+        h2(class='country-list-head')= title
+        p(class="country-list-para") If you don't see your continent please 
+            a(href="/home/groups/create") Create it now!
+    ul(class='country-list')
         for group in groups_list
-            a(href=group.url)= group.name 
-            br
+            a(href=group.url class='country-list-item')= group.name 
 
-    a(href="/home") Back to Home
+    a(href="/home" class='country-list-back') Back to Home
